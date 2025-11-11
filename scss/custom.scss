@@ -1,0 +1,19 @@
+// Custom.scss
+// Esto lo he copiado y pegado directamente de la documentación
+
+// Include any default variable overrides here (though functions won't be available)
+
+// Colores
+$primary: #A00;
+
+.navbar-brand>img{
+    width: 40px;
+    height: auto;
+}
+
+// Tipo de letra
+
+// Lo importo todo del tirón
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
