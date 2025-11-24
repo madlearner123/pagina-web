@@ -1,0 +1,153 @@
+<!-- https://getbootstrap.com/docs/5.0/customize/sass/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samuel Chacón Segovia</title>
+    <link rel="stylesheet" href="scss/custom.css" />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- Menú navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/libro.png" /> Leer es vivir</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+              <!-- Enlace 1 -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="books.html">Mis libros</a>
+              <!-- Enlace 2 -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="others.html">Otros lectores</a>
+              <!-- Enlace 3 -->
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-primary" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Tabla responsive -->
+    <div class="container mt-5 border border-primary rounded">
+      <h1>Mis libros</h1>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Título</th>
+            <th scope="col">Autor</th>
+            <th scope="col">Veces prestado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Asesinato en el Orient Express</td>
+            <td>Agatha Christie</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>La caída de los gigantes</td>
+            <td>Ken Follet</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Ángeles y Demonios</td>
+            <td>Dan Brown</td>
+            <td>15</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Formulario -->
+
+    <div class="container mt-5">
+      <h2>Añadir nuevo libro</h2>
+
+      <div class="row">
+        <div class="col-12 col-xl-6 form-group">
+          <label>Título</label>
+          <input class="form-control" type="text" />
+        </div>
+        <div class="col-12 col-xl-6 form-group">
+          <label>Autor</label>
+          <input class="form-control" type="text" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-xl-6 form-group">
+            <label class="col-xs-12">Páginas</label>
+            <input class="form-control" type="text" />
+          </div>
+        <div class="col-12 col-xl-6 form-group">
+            <label class="col-xs-12">Veces prestado</label>
+            <input class="form-control" type="text" />
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <a
+          href="/"
+          class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+        >
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">© Samuel Chacón, Inc</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-muted" href="#"
+            ><img
+              witdh="20px"
+              height="20px"
+              src="images/hashtag-solid-full.svg"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
