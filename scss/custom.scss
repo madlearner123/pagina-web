@@ -3,8 +3,16 @@
 
 // Include any default variable overrides here (though functions won't be available)
 
-// Colores
+// Color primario
 $primary: #A00;
+
+// Color de las captions del carrusel (Para que haga más contraste con las imagnes del carrusel)
+$carousel-caption-color: cyan;
+// Para que las captions esté arriba
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+}
 
 // Le cambio la fuente a los botones
 // https://stackoverflow.com/questions/24075222/how-can-i-change-the-bootstrap-default-font-family-using-font-from-google 

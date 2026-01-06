@@ -1,5 +1,10 @@
 @charset "UTF-8";
-@import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,300,700");
+.carousel-caption {
+  top: 0;
+  bottom: auto;
+}
+
 .navbar-brand > img {
   width: 40px;
   height: auto;
@@ -6139,7 +6144,7 @@ textarea.form-control-lg {
 :root,
 [data-bs-theme=light] {
   --bs-carousel-indicator-active-bg: #fff;
-  --bs-carousel-caption-color: #fff;
+  --bs-carousel-caption-color: cyan;
   --bs-carousel-control-icon-filter: ;
 }
 
