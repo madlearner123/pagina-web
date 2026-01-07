@@ -40,6 +40,10 @@
               <a class="nav-link" href="./others.html">Otros lectores</a>
               <!-- Enlace 3 -->
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Video Tutorial</a>
+              <!-- Enlace 4 -->
+            </li>
           </ul>
           <form class="d-flex">
             <input
@@ -62,6 +66,26 @@
         </div>
       </div>
     </nav>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Video tutorial</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <video width="1280" height="720" controls>
+              <source src="images/PROYECTO_TERMINADO.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+        </div>
+    </div>
+    </div>
 
     <!-- Carrusel -->
     <div
@@ -117,7 +141,7 @@
           Bibliotecas
         </button>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Localiczción</a></li>
+          <li><a class="dropdown-item" href="#">Localización</a></li>
           <li><a class="dropdown-item" href="#">Precio</a></li>
           <li><a class="dropdown-item" href="#">personas</a></li>
         </ul>
